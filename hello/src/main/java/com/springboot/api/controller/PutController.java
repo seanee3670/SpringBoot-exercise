@@ -11,9 +11,9 @@ import java.util.Map;
 @RequestMapping("/api/v1/put-api")
 public class PutController {
 
-    // @RequestBody 와 Map 을 화룡ㅇ한 PUT 메서드 구현
+    // @RequestBody 와 Map 을 활용한 PUT 메서드 구현
     @PutMapping(value = "/member")
-    public String postMember(@RequestBody Map<String, Object> putData) {
+    public String putMember(@RequestBody Map<String, Object> putData) {
         StringBuilder sb = new StringBuilder();
 
         putData.entrySet().forEach(map -> {
